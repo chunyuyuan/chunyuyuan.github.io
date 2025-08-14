@@ -1,0 +1,121 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chunyu Yuan - Homepage</title>
+
+    <!-- Particles.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Verdana, sans-serif;
+            color: white;
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        }
+
+        #layout-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            padding: 20px;
+            z-index: 1;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 700px;
+            line-height: 1.6;
+            font-size: 1.1em;
+            text-align: justify; /* Align both sides */
+            text-justify: inter-word; /* For smoother justification */
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #00bfff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div id="layout-content">
+        <h1>Chunyu Yuan</h1>
+
+        <p>
+            I am a Postdoctoral Research Fellow at 
+            <a href="https:////www.mdanderson.org//" target="_blank">The University of Texas MD Anderson Cancer Center</a>, 
+            <a href="https://odin.mdacc.tmc.edu/~akorkut/#/home/" target="_blank">Dr. Korkut's Lab</a>, collaborating with Prof. 
+            <a href="https://scholar.google.com/citations?user=U7HnX4kAAAAJ&hl=en" target="_blank">Korkut Anil</a>.
+            <br><br>
+            I received my Ph.D. degree in Computer Science from 
+            <a href="https://www.gc.cuny.edu/" target="_blank">CUNY Graduate Center</a> in 2025, advised by Prof. 
+            <a href="https://scholar.google.com/citations?user=FazfMZMAAAAJ&hl=en" target="_blank">Sos Agaian</a>.
+            <br><br>
+            My research primarily revolves around artificial intelligence, computer vision, and machine learning, with a strong emphasis on developing efficient, lightweight models suitable for resource-constrained environments. Currently, I am working on Large Language models for cancer treatment and drug development. </p>
+
+        <p>
+            <strong>Email:</strong> 
+           cunyycy@gmail.com
+        </p>
+
+        <p>
+            <a href="https://scholar.google.com/citations?user=UjBc8QwAAAAJ&hl=en" target="_blank">Google Scholar</a> - 
+            <a href="https://github.com/yuanchunyu" target="_blank">GitHub</a> - 
+            <a href="https://www.linkedin.com/in/chunyu-y-47516b193/" target="_blank">LinkedIn</a> - 
+            <a href="https://www.webofscience.com/wos/author/record/IQV-5044-2023" target="_blank">WebofScience</a> - 
+            <a href="./resume.pdf" target="_blank">Curriculum Vitae</a>
+        </p>
+    </div>
+
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": { "value": 100 },
+                "color": { "value": ["#00bfff","#ff7f50","#7fff00","#ff1493"] },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.7 },
+                "size": { "value": 3 },
+                "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.3, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "out_mode": "bounce" }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": true, "mode": "push" }
+                },
+                "modes": { "repulse": { "distance": 120 }, "push": { "particles_nb": 4 } }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
